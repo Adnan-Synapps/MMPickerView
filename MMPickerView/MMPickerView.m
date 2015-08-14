@@ -273,7 +273,7 @@ NSString * const MMshowsSelectionIndicator = @"showsSelectionIndicator";
   */
   
   //Add pickerView
-  _pickerView = [[UIPickerView alloc] initWithFrame:CGRectMake(0.0, 44.0, 320.0, 216.0)];
+  _pickerView = [[UIPickerView alloc] initWithFrame:CGRectMake(0.0, 44.0, self.frame.size.width, 216.0)];
   [_pickerView setDelegate:self];
   [_pickerView setDataSource:self];
   [_pickerView setShowsSelectionIndicator: _pickerViewShowsSelectionIndicator];//YES];
