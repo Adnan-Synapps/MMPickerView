@@ -180,7 +180,7 @@ NSString * const MMshowsSelectionIndicator = @"showsSelectionIndicator";
   [self addSubview:_pickerViewContainerView];
   
   //PickerView Container with top bar
-  _pickerContainerView = [[UIView alloc] initWithFrame:CGRectMake(0.0, _pickerViewContainerView.bounds.size.height - 260.0, 320.0, 260.0)];
+  _pickerContainerView = [[UIView alloc] initWithFrame:CGRectMake(0.0, _pickerViewContainerView.bounds.size.height - 260.0, self.frame.size.width, 260.0)];
     
   //Default Color Values (if colors == nil)
   
