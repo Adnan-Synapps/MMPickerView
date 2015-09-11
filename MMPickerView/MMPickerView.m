@@ -141,7 +141,7 @@ NSString * const MMshowsSelectionIndicator = @"showsSelectionIndicator";
   if (chosenObject!=nil) {
     selectedRow = [_pickerViewArray indexOfObject:chosenObject];
   }else{
-    selectedRow = [[_pickerViewArray objectAtIndex:0] integerValue];
+      selectedRow = 0;//[[_pickerViewArray objectAtIndex:0] integerValue];
   }
   
   
