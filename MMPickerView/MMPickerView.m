@@ -95,6 +95,8 @@ NSString * const MMshowsSelectionIndicator = @"showsSelectionIndicator";
 
 -(void)dismiss{
  [MMPickerView dismissWithCompletion:self.onDismissCompletion];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"Done" object:nil];
 }
 
 +(void)removePickerView{
